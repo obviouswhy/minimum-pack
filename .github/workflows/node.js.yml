@@ -24,5 +24,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm ci
+    - run: npm install
     - name: Check Website Availability
       run: node /tests/availability-test.js
