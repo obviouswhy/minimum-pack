@@ -26,4 +26,4 @@ jobs:
     - run: npm ci
     - run: npm install
     - name: Check Website Availability
-      run: node /tests/availability-test.js
+      run: node tests/availability-test.js
