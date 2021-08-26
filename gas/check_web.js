@@ -18,14 +18,14 @@ const checkWeb = () => {
       console.log("正常です。");
     } else {
       MailApp.sendEmail({
-        to: "eizaburo.tamaki@gmail.com",
+        to: "snogal.cm@gmail.com",
         subject: "警告：コンテンツの書き換え検知",
         htmlBody: `サイトはダウンしていないようですがコンテンツが期待値と違います。`,
       });
     }
   } else {
     MailApp.sendEmail({
-      to: "eizaburo.tamaki@gmail.com",
+      to: "snogal.cm@gmail.com",
       subject: "警告：サイトダウンを検知",
       htmlBody: `サイトのダウンを検知しました。確認してください。`,
     });
